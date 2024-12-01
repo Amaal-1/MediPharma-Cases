@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacy Quest: Therapeutics Edition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <h1>Pharmacy Quest: Therapeutics Edition</h1>
+    </header>
+    
+    <div id="patient-profile">
+      <p id="case-description">A 68-year-old male with hypertension, diabetes, CKD stage 3, and recent MI. What drug adjustment should be made?</p>
+      <p id="patient-info">Serum creatinine: 1.8 mg/dL, current meds: ACE inhibitors, metformin, beta-blocker.</p>
+    </div>
+
+    <div id="options">
+      <button class="option" onclick="chooseTherapy('Start Spironolactone')">Start Spironolactone</button>
+      <button class="option" onclick="chooseTherapy('Increase ACE inhibitor dose')">Increase ACE inhibitor dose</button>
+      <button class="option" onclick="chooseTherapy('Switch to ARB')">Switch to ARB</button>
+      <button class="option" onclick="chooseTherapy('Start Amlodipine')">Start Amlodipine</button>
+    </div>
+
+    <div id="feedback"></div>
+
+    <footer>
+      <button id="next" onclick="nextCase()">Next Case</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
